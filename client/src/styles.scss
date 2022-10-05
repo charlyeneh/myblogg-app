@@ -1,0 +1,72 @@
+$background1: rgb(154, 199, 211);
+$background2: rgb(26, 137, 168);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.app {
+	.container {
+		//Login and register
+		.login {
+			position: relative;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: $background1;
+		}
+
+		h2 {
+			font-size: 24px;
+			color: $background2;
+			margin-bottom: 5px;
+		}
+
+		form {
+			display: flex;
+			position: relative;
+			flex-wrap: wrap;
+			width: fit-content;
+			flex-direction: column;
+			justify-content: center;
+			gap: 10px;
+			background-color: white;
+			border: none;
+			border-radius: 5px;
+			padding: 8px;
+
+			input {
+				padding: 10px;
+				width: 300px;
+				border: none;
+				border-bottom: 1px solid $background2;
+			}
+
+			button {
+				padding: 5px;
+				cursor: pointer;
+				background-color: $background2;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				border: none;
+			}
+
+			p {
+				color: red;
+				font-size: 12px;
+				text-align: center;
+			}
+
+			span {
+				text-align: center;
+				font-size: 14px;
+			}
+		}
+	}
+}
